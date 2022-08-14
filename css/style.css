@@ -1,0 +1,118 @@
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap');
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+:root {
+    --primary:rgb(194, 12, 12);   
+    --secondary: #FFFFFF;
+}
+
+/* basic typography */
+body {
+    font-family:'Poppins',sans-serif;
+    color:var(--secondary);
+    font-size:18px;
+    line-height: 30px;
+    font-weight: 300;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family:'montserrat', sans-seriff;
+    color:white
+}
+h1 {
+    font-weight: 700;
+}
+strong{
+    font-weight: 700;
+}
+p{
+    color:var(--secondary);
+}
+
+/* basic stylings */
+
+
+/* Nav Bar */
+
+
+/* Home section */
+.site-title{
+    font-size: 75px;
+}
+
+.site-title .text-name{
+    color: transparent;
+    -webkit-text-stroke:4px var(--primary);
+}
+p.my-job{
+    color:white;
+}
+.scroll-down-arrow{
+    left:50%;
+    bottom:40px;
+}
+
+.animated{
+    position:relative;
+    animation:fadeInDown 1.5s inifinite;
+}
+
+@keyframes fadeInDown{
+    0%{
+        top:-25px;
+        opacity:0;
+    }
+    100%{
+        top:10px;
+        opacity: 1;
+    }
+
+}
+
+/* about section */
+.bg-dark-1{
+    background: #191919;
+    
+}
+.bg-dark-2{
+    background: #101010;
+}
+.section-title{
+    font-size: 62px;
+    font-weight: 800;
+    color: white;
+}
+.nav-tabs .nav-link{
+    color:white !important;
+
+}
+.nav-tabs .nav-link.active{
+    background: #3e3e3e;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+.navtabs .nav-link:hover,
+.nav-tabs{
+    border-color: var(--secondary);
+}
+/* services section */
+
+
+/* Testimonial section */
+
+
+/* Contact section */
+
+
+/* footer */
+
+
+/* back to top */
+
+
+/* Responsiveness */
