@@ -141,7 +141,49 @@ p.my-job{
     color:red;
 }
 /* Testimonial section */
+.portfolio-filter button.clicked{
+    color:var(--primary);
+}
+.tns-nav{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.tns-nav button{
+    background-color: gray;
+    border: none;
+    margin:6px;
+    height: 12px;
+    width: 5px;
+    border-radius: 50%;
 
+
+}
+.tns-nav button:hover{
+    background-color: var(--primary);
+}
+
+.tns-nav .tns-nav-active{
+    background-color: var(--primary);
+    position:relative;
+    top:-4px;
+}
+
+.tns-nav .tns-nav-active::before{
+    content: '';
+    position:absolute;
+    height:150%;
+    width: 150%;
+    left:-3px;
+    top:-3px;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+
+}
+.test-thumb{
+    height: 60px;
+    width:60px;
+    border-radius: 50%;
+}
 
 /* Contact section */
 

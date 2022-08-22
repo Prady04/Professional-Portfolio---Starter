@@ -67,7 +67,21 @@ btnElem.forEach(function(el,key){
 })
 
 // Testimonial Slider
-
+var slider = tns({
+  container : '.my-slider',
+  items:1,
+  controls:false,
+  navPosition:'bottom',
+  gutter:30,
+  autoplay:true,
+  autoplayButtonOutput:false,
+  mouseDrag:true,
+  responsive:{
+    960: {
+      items:2
+    }
+  }
+});
 
 // Scroll to top
 
