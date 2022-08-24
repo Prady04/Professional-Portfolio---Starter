@@ -8,8 +8,8 @@
 /* font-family: 'Poppins', sans-serif; */
 
 :root {
-    --primary:rgb(194, 12, 12);   
-    --secondary: #FFFFFF;
+    --primary: #F9004D;
+    --secondary: #868690;
 }
 
 /* basic typography */
@@ -20,12 +20,19 @@ body {
     line-height: 30px;
     font-weight: 300;
 }
-h1,h2,h3,h4,h5,h6 {
-    font-family:'montserrat', sans-seriff;
-    color:white
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
 }
 h1 {
-    font-weight: 700;
+    font-weight: 900;
 }
 strong{
     font-weight: 700;
@@ -36,6 +43,40 @@ p{
 
 /* basic stylings */
 
+.bg-dark-1 {
+    background: #191919;
+}
+
+.bg-dark-2 {
+    background: #101010;
+}
+
+.section-title {
+    font-size: 62px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.section-title-center p {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.custom-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 .75rem;
+    max-width: 1820px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text-pink {
+    color: var(--primary);
+}
 
 /* Nav Bar */
 .navbar {
@@ -57,9 +98,9 @@ p{
 .fixed-top {
     top:-40px;
     transform: translateY(40px);
-    background-color: #000000;
-    padding:10px;
-    transition: transform 0.3s ease-in-out;
+    background-color: #000;
+    padding: 10px 0;
+    transition: transform .3s;
 }
 
 /* Home section */
@@ -69,7 +110,7 @@ p{
 
 .site-title .text-name{
     color: transparent;
-    -webkit-text-stroke:4px var(--primary);
+    -webkit-text-stroke: 3px var(--primary);
 }
 p.my-job{
     color:white;
@@ -79,9 +120,9 @@ p.my-job{
     bottom:40px;
 }
 
-.animated{
-    position:relative;
-    animation:fadeInDown 1.5s inifinite;
+.animated {
+    position: relative;
+    animation: fadeInDown 1.5s infinite;
 }
 
 @keyframes fadeInDown{
@@ -97,40 +138,26 @@ p.my-job{
 }
 
 /* about section */
-.bg-dark-1{
-    background: #191919;
-    
-}
-.bg-dark-2{
-    background: #101010;
-}
-.section-title{
-    font-size: 62px;
-    font-weight: 800;
-    color: white;
-}
-.section-title-center{
-    max-width: 950px;
-    margin:0 auto;
-}
-.nav-tabs .nav-link{
-    color:white !important;
-
+.nav-tabs .nav-link {
+    color: white !important;
 }
 .nav-tabs .nav-link.active{
     background: #3e3e3e;
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, .2);
     color: white;
 }
-.navtabs .nav-link:hover,
-.nav-tabs{
+.nav-tabs .nav-link:hover {
+    border-color: rgba(255, 255, 255, .3)
+}
+
+.nav-tabs {
     border-color: var(--secondary);
 }
 /* services section */
 
 .single-service-icon i{
     color:var(--primary);
-    font-size:20px;
+    font-size: 26px;
     position:absolute;
     left: 50%;
     top:50%;
@@ -145,7 +172,7 @@ p.my-job{
 .single-service p{
     font-size: 16px;
     line-height: 25px;
-    font-weight: 800;
+    font-weight: 500;
 }
 .prt-item img{
     max-width: 100%;
@@ -159,14 +186,13 @@ p.my-job{
     background-color:transparent;
     color:white;
 }
-.portfolio-filter button.clicked{
-    color:red;
+
+.portfolio-filter button.clicked {
+    color: var(--primary);
 }
+
 /* Testimonial section */
-.portfolio-filter button.clicked{
-    color:var(--primary);
-}
-.tns-nav{
+.tns-nav {
     text-align: center;
     margin-bottom: 25px;
 }
@@ -210,33 +236,18 @@ p.my-job{
 /* Contact section */
 .btn-submit {
     background-color: var(--primary);
-    color:white;
-    padding:10px 22px;
-    letter-spacing: 3px;
-    border:2px solid transparent;
+    color: white;
+    padding: 10px 22px;
+    letter-spacing: 2px;
+    border: 2px solid transparent;
 }
 .btn-submit:hover{
     background-color: transparent;
-    color:white;
     border-color: var(--primary);
+    color: var(--primary);
 }
 /* footer */
 
-
-.custom-wrapper {
-    width:100%;
-    margin:0 auto;
-    padding: 0 0.75rem;
-    max-width: 1820px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-.text-pink a{
-    color:var(--primary);
-}
 .nav-social a {
     color: var(--secondary);
 }
@@ -257,8 +268,7 @@ p.my-job{
     background-color: #383838;
     padding:14px 16px;
     border-radius: 7px;
-    transition: background-color 0.2s ease; 
-    
+    transition: background-color .2s ease;
 }
 
 .scroll-to-top i:hover {
@@ -275,8 +285,8 @@ p.my-job{
     }
 
     .navbar {
-        background-color:#000000;
-        padding:15px 0;
+        background-color: #000;
+        padding: 15px 0;
     }
 
     .site-title {
