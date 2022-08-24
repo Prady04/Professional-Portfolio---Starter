@@ -38,7 +38,29 @@ p{
 
 
 /* Nav Bar */
+.navbar {
+    padding-top: 30px;
+    background-color: transparent;
+    z-index: 99;
 
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link:hover {
+    color:var(--primary) !important;
+}
+.header{
+    margin-top: -84px;
+}
+.fixed-top {
+    top:-40px;
+    transform: translateY(40px);
+    background-color: #000000;
+    padding:10px;
+    transition: transform 0.3s ease-in-out;
+}
 
 /* Home section */
 .site-title{
@@ -206,15 +228,19 @@ p.my-job{
     margin:0 auto;
     padding: 0 0.75rem;
     max-width: 1820px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 .text-pink a{
     color:var(--primary);
 }
-footer .nav-social a {
+.nav-social a {
     color: var(--secondary);
 }
-footer .nav-social a:hover{
+.nav-social a:hover{
     color:var(--primary);
 
 }
@@ -223,6 +249,7 @@ footer .nav-social a:hover{
     position:fixed;
     right: 50px;
     bottom: 50px;
+    display: none;
 
 }
 .scroll-to-top i {
@@ -234,5 +261,45 @@ footer .nav-social a:hover{
     
 }
 
+.scroll-to-top i:hover {
+    
+    background-color: #696969;
+}
 
 /* Responsiveness */
+@media only screen and (max-width:992px){
+
+    body {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .navbar {
+        background-color:#000000;
+        padding:15px 0;
+    }
+
+    .site-title {
+        font-size:50px;
+
+    }
+    .header {
+        background-position: 62%;
+        background-size: cover;
+    }
+
+    .section-title {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    .nav-tabs{
+        justify-content: center;
+    }
+
+    .single-test-content.p-5{
+        padding: 2rem 1rem  !important;
+
+    }
+}
+    

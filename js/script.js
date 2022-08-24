@@ -84,8 +84,31 @@ var slider = tns({
 });
 
 // Scroll to top
+window.addEventListener('scroll',function(){
+  var scrolled = window.pageYOffset;
+  var top = document.querySelector('.scroll-to-top')
+  if(scrolled > 700){
+    top.classList.add('d-inline-block')
 
+  }
+  if(scrolled < 700){
+    top.classList.remove('d-inline-block')
+
+  }
+  
+});
 
 //Navbar
 
+window.addEventListener('scroll', function(){
+  if(window.scrollY>50){
+    document.getElementById('navbar-scroll').classList.add('.fixed-top');
+    var navbar_height = document.querySelector('.navbar').offsetHeight;
+    document.body.style.paddingTop= navbar_height+'px';
+  } else {
+    document.getElementById('navbar-scroll').classList.remove('.fixed-top');
+    document.body.style.paddingTop= 0;
+    
+  }
+});
 
