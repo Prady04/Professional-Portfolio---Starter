@@ -186,12 +186,53 @@ p.my-job{
 }
 
 /* Contact section */
-
-
+.btn-submit {
+    background-color: var(--primary);
+    color:white;
+    padding:10px 22px;
+    letter-spacing: 3px;
+    border:2px solid transparent;
+}
+.btn-submit:hover{
+    background-color: transparent;
+    color:white;
+    border-color: var(--primary);
+}
 /* footer */
 
 
+.custom-wrapper {
+    width:100%;
+    margin:0 auto;
+    padding: 0 0.75rem;
+    max-width: 1820px;
+
+}
+.text-pink a{
+    color:var(--primary);
+}
+footer .nav-social a {
+    color: var(--secondary);
+}
+footer .nav-social a:hover{
+    color:var(--primary);
+
+}
 /* back to top */
+.scroll-to-top {
+    position:fixed;
+    right: 50px;
+    bottom: 50px;
+
+}
+.scroll-to-top i {
+    color: var(--primary);
+    background-color: #383838;
+    padding:14px 16px;
+    border-radius: 7px;
+    transition: background-color 0.2s ease; 
+    
+}
 
 
 /* Responsiveness */
